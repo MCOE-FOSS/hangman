@@ -22,6 +22,7 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+#!/usr/bin/python
 import pygtk
 pygtk.require('2.0')
 import gtk
@@ -76,7 +77,7 @@ class Hangman:
         self.lcaseword = self.word.lower()
         
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)        
-        self.window.set_title("Hangman")       
+        self.window.set_title("Coding Hangman")       
         self.window.connect("delete_event", self.delete_event)   
         self.window.connect("key_press_event", self.key_press_event)         
         self.window.set_border_width(10)
@@ -98,9 +99,9 @@ class Hangman:
         
         self.score = 0
         self.msglabel = gtk.Label \
-                        ('Score : ' + str(self.score) + ' ' * 9 + '\n\n\n\n')
+                        ('Coding Hangman.\nScore : ' + str(self.score) + ' ' * 9 + '\n\n\n\n')
                         
-        self.msglabel.modify_font(pango.FontDescription("sans 15"))          
+        self.msglabel.modify_font(pango.FontDescription("FreeMono 20"))          
         hbox.pack_start(self.msglabel, True, False, 0) 
                 
         vbox.pack_start(hbox, False, False, 0) 
@@ -115,7 +116,7 @@ class Hangman:
                 self.mask = self.mask+'-' 
         
         self.masklabel = gtk.Label(self.mask)
-        self.masklabel.modify_font(pango.FontDescription("sans 27"))         
+        self.masklabel.modify_font(pango.FontDescription("FreeMono 27"))         
         vbox.pack_start(self.masklabel, False, False, 0) 
 
         frame = gtk.Frame()         
@@ -141,7 +142,7 @@ class Hangman:
         self.button = gtk.Button('Quit')  
         self.button.connect("clicked", self.callback, 'Quit') 
         hbox.pack_start(self.button, True, False, 0)  
-        self.button = gtk.Button('Play Again')  
+        self.button = gtk.Button('Next')  
         self.button.connect("clicked", self.callback, 'PlayAgain') 
         hbox.pack_start(self.button, False, False, 0)   
                 
@@ -211,10 +212,16 @@ class Hangman:
     def getWord(self):
         f = open('data/words.txt')
         list=f.readlines()   
-        f.close()                 
-        return list[int(random.random() * len(list))].rstrip('\n')
+        f.close()
+        word=""
+        while 1:
+        	word=list[int(random.random() * len(list))].rstrip('\n')
+        	if len(word) >= 4:
+        		break
+        return word
 
 if __name__ == "__main__":
     hm = Hangman()  
     gtk.main()      
+    
     
