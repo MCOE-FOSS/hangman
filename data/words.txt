@@ -1,100 +1,64 @@
-Angelina Jolie
-Ann Sheridan
-Anne Baxter
-Anthony Hopkins
-Audie Murphy
-Audrey Hepburn
-Barbara Stanwyck
-Barry Fitzgerald
-Betty Davis
-Betty Grable
-Brad Pitt
-Brendan Fraser
-Burt Lancaster
-Carole Lombard
-Cary Grant
-Charles Bronson
-Charles Coburn
-Charles Laughton
-Charlton Heston
-Clark Gable
-Claudette Colbert
-Clint Eastwood
-David Niven
-Doris Day
-Errol Flynn
-Faye Dunaway
-Fred Astaire
-Gary Cooper
-Gene Tierney
-George Clooney
-George Peppard
-George Raft
-Glenn Ford
-Grace Kelly
-Greta Garbo
-Harrison Ford
-Henry Fonda
-Herbert Lom
-Herbert Marshall
-Humphrey Bogart
-Irene Dunne
-Jack Nicholson
-James Coburn
-James Cagney
-James Garner
-James Mason
-James Stewart
-Jane Fonda
-Jane Russell
-Jean Arthur
-Jean Harlow
-Jeff Goldblum
-Joan Crawford
-Jodie Foster
-Joel McCrea
-John Wayne
-Johnny Depp
-Jude Law
-Judy Garland
-Kathryn Hepburn
-Keira Knightley
-Kevin Costner
-Kirk Douglas
-Lauren Bacall
-Lawrence Olivier
-Lee Marvin
-Marilyn Monroe
-Marlene Dietrich
-Matt Damon
-Mel Gibson
-Michael Caine
-Michelle Pfeiffer
-Myrna Loy
-Nicole Kidman
-Orlando Bloom
-Orson Welles
-Paul Newman
-Peter Lorre
-Ralph Bellamy
-Ralph Richardson
-Randolph Scott
-Rex Harrison
-Robert Redford
-Robert Vaughan
-Rock Hudson
-Roger Moore
-Rita Hayworth
-Russell Crowe
-Sean Connery
-Sidney Greenstreet
-Spencer Tracy
-Sterling Hayden
-Steve McQueen
-Stuart Whitman
-Tom Cruise
-Tommy Lee Jones
-Vivien Leigh
-Walter Brennan
-Will Smith
-Yul Brynner
+auto
+double
+int
+struct
+break
+else
+long
+switch
+case
+enum
+register
+typedef
+char
+extern
+return
+union
+const
+float
+short
+unsigned
+continue
+signed
+void
+default
+goto
+sizeof
+volatile
+static
+while
+bitand
+bitor
+bool
+catch
+throw
+delete
+continue
+false
+mutable
+namespace
+nullptr
+operator
+public
+private
+protected
+this
+true
+typename
+volatile
+global
+assert
+class
+import
+except
+raise
+print
+yield
+with
+pass
+finally
+abstract
+boolean
+native
+throws
+transient
